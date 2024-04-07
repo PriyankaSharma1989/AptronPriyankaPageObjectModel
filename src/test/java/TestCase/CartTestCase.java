@@ -39,6 +39,7 @@ WebDriver driver;
 		homepage.ClickAddToCartButton6();
 		homepage.ClickShoppingCartContainer();
 		cartpage.ClickRemoveButton1();
+		cartpage.ClickCheckoutButton();
 		Thread.sleep(1000);
 		}
 	@Test
@@ -57,6 +58,7 @@ WebDriver driver;
 		homepage.ClickAddToCartButton6();
 		homepage.ClickShoppingCartContainer();
 		cartpage.ClickRemoveButton2();
+		cartpage.ClickCheckoutButton();
 		Thread.sleep(1000);
 		}
 	@Test
@@ -75,6 +77,7 @@ WebDriver driver;
 		homepage.ClickAddToCartButton6();
 		homepage.ClickShoppingCartContainer();
 		cartpage.ClickRemoveButton3();
+		cartpage.ClickCheckoutButton();
 		Thread.sleep(1000);
 		}
 	@Test
@@ -93,6 +96,7 @@ WebDriver driver;
 		homepage.ClickAddToCartButton6();
 		homepage.ClickShoppingCartContainer();
 		cartpage.ClickRemoveButton4();
+		cartpage.ClickCheckoutButton();
 		Thread.sleep(1000);
 		}
 	@Test
@@ -111,6 +115,7 @@ WebDriver driver;
 		homepage.ClickAddToCartButton6();
 		homepage.ClickShoppingCartContainer();
 		cartpage.ClickRemoveButton5();
+		cartpage.ClickCheckoutButton();
 		Thread.sleep(1000);
 		}
 	@Test
@@ -129,6 +134,7 @@ WebDriver driver;
 		homepage.ClickAddToCartButton6();
 		homepage.ClickShoppingCartContainer();
 		cartpage.ClickRemoveButton6();
+		cartpage.ClickCheckoutButton();
 		Thread.sleep(1000);
 		}
 	@Test

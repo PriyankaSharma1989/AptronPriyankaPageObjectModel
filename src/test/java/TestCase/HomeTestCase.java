@@ -162,7 +162,8 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
+		Thread.sleep(3000);
+		homepage.ClickSideMenuButton();
 		homepage.ClickAboutSideBarLink();
 		Thread.sleep(1000);
 	}
@@ -173,6 +174,7 @@ WebDriver driver;
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
 		Thread.sleep(1000);
+		homepage.ClickSideMenuButton();
 		homepage.ClickLogoutSideBarLink();
 		Thread.sleep(1000);
 	}
