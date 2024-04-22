@@ -5,9 +5,23 @@
     <classes>
       <class name="TestCase.HomeTestCase">
         <methods>
+          <include name="HomeTestCase15"/>
           <include name="HomeTestCase14"/>
+          <include name="HomeTestCase11"/>
+          <include name="HomeTestCase10"/>
           <include name="Setup"/>
+          <include name="HomeTestCase13"/>
+          <include name="HomeTestCase12"/>
           <include name="TearDown"/>
+          <include name="HomeTestCase9"/>
+          <include name="HomeTestCase6"/>
+          <include name="HomeTestCase5"/>
+          <include name="HomeTestCase8"/>
+          <include name="HomeTestCase7"/>
+          <include name="HomeTestCase2"/>
+          <include name="HomeTestCase1"/>
+          <include name="HomeTestCase4"/>
+          <include name="HomeTestCase3"/>
         </methods>
       </class> <!-- TestCase.HomeTestCase -->
     </classes>

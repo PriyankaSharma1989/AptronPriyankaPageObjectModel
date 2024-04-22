@@ -76,10 +76,9 @@ WebDriver driver;
 		checkout.EnterLastName("user");
 		checkout.EnterPostalCode("12345");
 		checkout.ClickContinueButton();
-        String ActualPriceSaucelabsbacklight = driver.findElement(By.cssSelector("div.page_wrapper div.checkout_summary_container div.cart_list div.cart_item:nth-child(3) div.cart_item_label div.item_pricebar:nth-child(3) > div.inventory_item_price")).getText();
+        String ActualPriceSaucelabsbacklight = driver.findElement(By.xpath("//div[@class='cart_list']//div[@class='cart_item'][1]")).getText();
         String ExpectedPriceSaucelabsbacklight = "$9.99";
         Assert.assertEquals(ActualPriceSaucelabsbacklight , ExpectedPriceSaucelabsbacklight);
-        Thread.sleep(3000);
         checkoutoverview.ClickFinishButton();
         Thread.sleep(1000);
         }
@@ -106,10 +105,9 @@ WebDriver driver;
 		checkout.EnterLastName("user");
 		checkout.EnterPostalCode("12345");
 		checkout.ClickContinueButton();
-		String ActualPriceBoltTshirt = driver.findElement(By.cssSelector("div.page_wrapper div.checkout_summary_container div.cart_list div.cart_item:nth-child(4) div.cart_item_label div.item_pricebar:nth-child(3) > div.inventory_item_price")).getText();
+		String ActualPriceBoltTshirt = driver.findElement(By.xpath("//div[@class='cart_list']//div[@class='cart_item'][2]")).getText();
         String ExpectedPriceBoltTshirt = "$15.99";
         Assert.assertEquals(ActualPriceBoltTshirt , ExpectedPriceBoltTshirt);
-        Thread.sleep(3000);
         checkoutoverview.ClickFinishButton();
         Thread.sleep(1000);
 	}
@@ -136,10 +134,9 @@ WebDriver driver;
 		checkout.EnterLastName("user");
 		checkout.EnterPostalCode("12345");
 		checkout.ClickContinueButton();
-		 String ActualPriceFleeceJacket = driver.findElement(By.cssSelector("div.page_wrapper div.checkout_summary_container div.cart_list div.cart_item:nth-child(5) div.cart_item_label div.item_pricebar:nth-child(3) > div.inventory_item_price")).getText();
+		 String ActualPriceFleeceJacket = driver.findElement(By.xpath("//div[@class='cart_list']//div[@class='cart_item'][3]")).getText();
          String ExpectedPriceFleeceJacket = "$49.99";
          Assert.assertEquals(ActualPriceFleeceJacket , ExpectedPriceFleeceJacket);
-         Thread.sleep(3000);
          checkoutoverview.ClickFinishButton();
          Thread.sleep(1000);
 	}
@@ -166,10 +163,9 @@ WebDriver driver;
 		checkout.EnterLastName("user");
 		checkout.EnterPostalCode("12345");
 		checkout.ClickContinueButton();
-		String ActualPriceOnesie = driver.findElement(By.cssSelector("div.page_wrapper div.checkout_summary_container div.cart_list div.cart_item:nth-child(6) div.cart_item_label div.item_pricebar:nth-child(3) > div.inventory_item_price")).getText();
+		String ActualPriceOnesie = driver.findElement(By.xpath("//div[@class='cart_list']//div[@class='cart_item'][4]")).getText();
         String ExpectedPriceOnesie = "$7.99";
         Assert.assertEquals(ActualPriceOnesie , ExpectedPriceOnesie);
-        Thread.sleep(3000);
         checkoutoverview.ClickFinishButton();
         Thread.sleep(1000);
         
@@ -197,10 +193,9 @@ WebDriver driver;
 		checkout.EnterLastName("user");
 		checkout.EnterPostalCode("12345");
 		checkout.ClickContinueButton();
-		String ActualPriceSaucelabsbackpack = driver.findElement(By.cssSelector("div.page_wrapper div.checkout_summary_container div.cart_list div.cart_item:nth-child(7) div.cart_item_label div.item_pricebar:nth-child(3) > div.inventory_item_price")).getText();
+		String ActualPriceSaucelabsbackpack = driver.findElement(By.xpath("//div[@class='cart_list']//div[@class='cart_item'][5]")).getText();
         String ExpectedPriceSaucelabsbackpack = "$29.99";
         Assert.assertEquals(ActualPriceSaucelabsbackpack , ExpectedPriceSaucelabsbackpack);
-        Thread.sleep(3000);
         checkoutoverview.ClickFinishButton();
         Thread.sleep(1000);
         
@@ -228,10 +223,9 @@ WebDriver driver;
 		checkout.EnterLastName("user");
 		checkout.EnterPostalCode("12345");
 		checkout.ClickContinueButton();
-        String ActualPriceRedTshirt = driver.findElement(By.cssSelector("div.page_wrapper div.checkout_summary_container div.cart_list div.cart_item:nth-child(8) div.cart_item_label div.item_pricebar:nth-child(3) > div.inventory_item_price")).getText();
+        String ActualPriceRedTshirt = driver.findElement(By.xpath(" //div[@class='cart_list']//div[@class='cart_item'][6]")).getText();
         String ExpectedPriceRedTshirt = "$15.99";
         Assert.assertEquals(ActualPriceRedTshirt ,ExpectedPriceRedTshirt );
-        Thread.sleep(3000);
         checkoutoverview.ClickFinishButton();
         Thread.sleep(1000);
         
@@ -262,7 +256,6 @@ WebDriver driver;
 		 String ActualTotalItemPrice = driver.findElement(By.xpath("//div[@class='summary_subtotal_label']")).getText();
          String ExpectedTotalItemPrice = "Item total: $129.94";
          Assert.assertEquals(ActualTotalItemPrice ,ExpectedTotalItemPrice );
-         Thread.sleep(3000);
          checkoutoverview.ClickFinishButton();
          Thread.sleep(1000);
          
@@ -293,7 +286,6 @@ WebDriver driver;
 		 String ActualTaxPrice = driver.findElement(By.xpath("//div[@class='summary_tax_label']")).getText();
          String ExpectedTaxPrice = "Tax: $10.40";
          Assert.assertEquals(ActualTaxPrice ,ExpectedTaxPrice );
-         Thread.sleep(3000);
          checkoutoverview.ClickFinishButton();
          Thread.sleep(1000);
          
@@ -324,7 +316,6 @@ WebDriver driver;
 		 String ActualTotalPrice = driver.findElement(By.xpath("//div[@class='summary_total_label']")).getText();
          String ExpectedTotalPrice = "Total: $140.34";
          Assert.assertEquals(ActualTotalPrice ,ExpectedTotalPrice );
-         Thread.sleep(3000);
          checkoutoverview.ClickFinishButton();
          Thread.sleep(1000);
          
@@ -351,7 +342,6 @@ WebDriver driver;
 		checkout.EnterLastName("user");
 		checkout.EnterPostalCode("12345");
 		checkout.ClickContinueButton();
-		Thread.sleep(3000);
 		checkoutoverview.ClickCancelButton();
 		Thread.sleep(1000);
 	}

@@ -7,25 +7,93 @@
         <methods>
           <include name="HomeTestCase15"/>
           <include name="HomeTestCase14"/>
+          <include name="HomeTestCase11"/>
           <include name="Setup"/>
+          <include name="HomeTestCase10"/>
+          <include name="HomeTestCase13"/>
+          <include name="HomeTestCase12"/>
           <include name="TearDown"/>
+          <include name="HomeTestCase9"/>
+          <include name="HomeTestCase6"/>
+          <include name="HomeTestCase5"/>
+          <include name="HomeTestCase8"/>
+          <include name="HomeTestCase7"/>
+          <include name="HomeTestCase2"/>
+          <include name="HomeTestCase1"/>
+          <include name="HomeTestCase4"/>
+          <include name="HomeTestCase3"/>
         </methods>
       </class> <!-- TestCase.HomeTestCase -->
+      <class name="TestCase.CheckoutCompleteTestCase">
+        <methods>
+          <include name="CheckOutCompleteTestCase2"/>
+          <include name="CheckOutCompleteTestCase1"/>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- TestCase.CheckoutCompleteTestCase -->
+      <class name="TestCase.CartTestCase">
+        <methods>
+          <include name="CartTestCase9"/>
+          <include name="CartTestCase6"/>
+          <include name="CartTestCase7"/>
+          <include name="CartTestCase4"/>
+          <include name="CartTestCase5"/>
+          <include name="CartTestCase2"/>
+          <include name="CartTestCase3"/>
+          <include name="Setup"/>
+          <include name="CartTestCase8"/>
+          <include name="CartTestCase11"/>
+          <include name="CartTestCase14"/>
+          <include name="CartTestCase13"/>
+          <include name="CartTestCase10"/>
+          <include name="CartTestCase12"/>
+          <include name="CartTestCase1"/>
+        </methods>
+      </class> <!-- TestCase.CartTestCase -->
       <class name="TestCase.CheckOutOverviewTestCase">
         <methods>
           <include name="CheckOutOverviewTestCase6"/>
           <include name="CheckOutOverviewTestCase10"/>
           <include name="CheckOutOverviewTestCase9"/>
+          <include name="CheckOutOverviewTestCase11"/>
           <include name="Setup"/>
           <include name="TearDown"/>
           <include name="CheckOutOverviewTestCase3"/>
           <include name="CheckOutOverviewTestCase4"/>
+          <include name="CheckOutOverviewTestCase1"/>
           <include name="CheckOutOverviewTestCase2"/>
           <include name="CheckOutOverviewTestCase7"/>
           <include name="CheckOutOverviewTestCase8"/>
           <include name="CheckOutOverviewTestCase5"/>
         </methods>
       </class> <!-- TestCase.CheckOutOverviewTestCase -->
+      <class name="TestCase.CheckOutTestCase">
+        <methods>
+          <include name="CheckOutTestCase2"/>
+          <include name="TearDown"/>
+          <include name="CheckOutTestCase1"/>
+          <include name="CheckOutTestCase3"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- TestCase.CheckOutTestCase -->
+      <class name="TestCase.LoginTestCase">
+        <methods>
+          <include name="TearDown"/>
+          <include name="LoginTestCase10"/>
+          <include name="LoginTestCase1"/>
+          <include name="LoginTestCase11"/>
+          <include name="LoginTestCase6"/>
+          <include name="LoginTestCase7"/>
+          <include name="LoginTestCase8"/>
+          <include name="LoginTestCase9"/>
+          <include name="LoginTestCase2"/>
+          <include name="LoginTestCase3"/>
+          <include name="Setup"/>
+          <include name="LoginTestCase4"/>
+          <include name="LoginTestCase5"/>
+        </methods>
+      </class> <!-- TestCase.LoginTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

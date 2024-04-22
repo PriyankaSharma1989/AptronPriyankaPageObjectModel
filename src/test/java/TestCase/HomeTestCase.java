@@ -1,4 +1,6 @@
 package TestCase;
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -42,7 +44,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.ClickAddToCartButton1();
 		Thread.sleep(1000);
 		}
@@ -52,7 +53,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.ClickAddToCartButton2();
 		Thread.sleep(1000);
 		}
@@ -62,7 +62,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.ClickAddToCartButton3();
 		Thread.sleep(1000);
 		}
@@ -72,7 +71,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.ClickAddToCartButton4();
 		Thread.sleep(1000);
 		}
@@ -82,7 +80,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.ClickAddToCartButton5();
 		Thread.sleep(1000);
 		}
@@ -92,7 +89,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.ClickAddToCartButton6();
 		Thread.sleep(1000);
 		}
@@ -102,7 +98,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.DropdownButtonOption1();
 		Thread.sleep(1000);
 	}
@@ -112,7 +107,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.DropdownButtonOption2();
 		Thread.sleep(1000);
 	}
@@ -122,7 +116,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.DropdownButtonOption3();
 		Thread.sleep(1000);
 	}
@@ -132,7 +125,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.DropdownButtonOption4();
 		Thread.sleep(1000);
 	}
@@ -142,7 +134,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.ClickShoppingCartContainer();
 		Thread.sleep(1000);
 	}
@@ -152,7 +143,6 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.ClickSideMenuButton();
 		Thread.sleep(1000);
 	}
@@ -162,10 +152,10 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(3000);
-		homepage.ClickSideMenuButton();
+	    homepage.ClickSideMenuButton();
+		Thread.sleep(2000);
 		homepage.ClickAboutSideBarLink();
-		Thread.sleep(1000);
+		
 	}
 	@Test
 	public void HomeTestCase15()throws InterruptedException
@@ -173,10 +163,10 @@ WebDriver driver;
 		LoginPageObject loginpageobject = new LoginPageObject(driver);
 		HomePageObject homepage = new HomePageObject(driver);
 		loginpageobject.Login("standard_user", "secret_sauce");
-		Thread.sleep(1000);
 		homepage.ClickSideMenuButton();
+		Thread.sleep(2000);
 		homepage.ClickLogoutSideBarLink();
-		Thread.sleep(1000);
+		
 	}
 		
 		
@@ -185,5 +175,6 @@ WebDriver driver;
     public void TearDown()
     {
    	 driver.quit();
+  
     }
 }
